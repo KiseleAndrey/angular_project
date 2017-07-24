@@ -1,0 +1,27 @@
+
+.flex-container {
+  display:flex;
+  padding: 0;
+  margin: 0 -16px 10px -16px;
+  div {
+    text-transform: uppercase;
+    text-align: center;
+    flex-grow: 1;
+    width: 50%;
+    cursor: pointer;
+    padding: 5px;
+  }
+}
+
+.ng-class {
+  color: lightblue;
+  border-bottom: solid 2px red;
+  animation-name: background;
+  animation-duration: .2s;
+}
+
+@keyframes background {
+  50% {
+    background: rgba(white, .3);
+  }
+}

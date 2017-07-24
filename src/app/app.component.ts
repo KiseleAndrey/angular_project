@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  select: number = 1;
+  onChanged(event: any) {
+    alert(event);
+  }
+  onSelectedTab(event: any) {
+    alert(event);
+  }
 }

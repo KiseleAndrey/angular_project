@@ -1,0 +1,4 @@
+  <div class="flex-container">
+    <div *ngFor="let tabPanel of tabPanels" [ngClass]="{'ng-class':tabPanel.active}" (click)="selecTabPanel(tabPanel)">{{tabPanel.header}}</div>
+  </div>
+  <ng-content></ng-content>

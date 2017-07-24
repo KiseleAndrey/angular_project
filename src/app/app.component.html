@@ -1,4 +1,10 @@
-<div> 
-  hello world
+<div>
+  <tabView (selectedTab)="onSelectedTab($event)" [selectIndex]="select">
+    <tabPanel header="A" (changedTab)="onChanged($event)">
+      A
+    </tabPanel>
+    <tabPanel header="B" (changedTab)="onChanged($event)">
+      B
+    </tabPanel>
+  </tabView>
 </div>
-
